@@ -1,4 +1,7 @@
 import CssBaseline from "@mui/material/CssBaseline";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -10,7 +13,9 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <DailyExpense />
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <DailyExpense />
+      </LocalizationProvider>
     </>
   );
 }
