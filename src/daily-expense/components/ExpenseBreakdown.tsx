@@ -48,6 +48,7 @@ function ExpenseBreakdown(props: ExpenseBreakdownInterface) {
             <TableHead>
               <TableRow>
                 <TableCell>{dayjs(exp.date).format("MMM D")}</TableCell>
+                <TableCell />
               </TableRow>
             </TableHead>
 
