@@ -12,3 +12,12 @@ export interface ExpensePerDayInterface {
   totalAmount: number;
   expenses: ExpenseInterface[];
 }
+
+export interface ScheduledExpenseInterface {
+  id: string;
+  name: string;
+  description?: string;
+  categoryId: string;
+  amount: string;
+  day: string;
+}

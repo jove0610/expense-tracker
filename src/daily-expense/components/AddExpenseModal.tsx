@@ -80,6 +80,7 @@ function AddExpenseModal(props: AddExpenseModalProps) {
               label="Category"
               name="category"
               size="small"
+              defaultValue=""
             >
               {MOCK_CATEGORY.map((category) => (
                 <MenuItem key={category.id} value={category.id}>

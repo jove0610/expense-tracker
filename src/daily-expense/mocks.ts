@@ -1,4 +1,4 @@
-import type { ExpenseInterface } from "./interface";
+import type { ExpenseInterface, ScheduledExpenseInterface } from "./interface";
 
 export const MOCK_CATEGORY = [
   { id: "1", name: "Bills" },
@@ -8,6 +8,7 @@ export const MOCK_CATEGORY = [
   { id: "5", name: "Foods - Grab" },
   { id: "6", name: "Foods - Coke" },
   { id: "7", name: "Foods - Cheat" },
+  { id: "8", name: "Utilities" },
   { id: "99", name: "Others" },
 ];
 
@@ -32,4 +33,10 @@ export const MOCK_EXPENSES: ExpenseInterface[] = [
     amount: 217,
     date: "2025-11-03",
   },
+];
+
+export const SCHEDULED_EXPENSES: ScheduledExpenseInterface[] = [
+  { id: "1", name: "Krisp", categoryId: "99", amount: "$12", day: "3rd" },
+  { id: "2", name: "Netflix", categoryId: "99", amount: "₱957", day: "12th" },
+  { id: "3", name: "Patreon", categoryId: "99", amount: "$5", day: "28th" },
 ];
