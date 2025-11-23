@@ -91,12 +91,12 @@ function AddExpenseModal(props: AddExpenseModalProps) {
           </FormControl>
           <TextField label="Amount" name="amount" size="small" required />
 
-          <Stack direction="row" gap={2}>
-            <Button type="submit" variant="contained">
-              Add
-            </Button>
+          <Stack direction="row" sx={{ gap: 2, ml: "auto", mt: 3 }}>
             <Button onClick={onClose} variant="outlined">
               Close
+            </Button>
+            <Button type="submit" variant="contained">
+              Add
             </Button>
           </Stack>
         </Stack>

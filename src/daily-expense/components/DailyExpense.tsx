@@ -82,7 +82,10 @@ function DailyExpense() {
         Clear Filters
       </Button>
 
-      <ExpenseBreakdown expenses={expensesForThisMonth} />
+      <ExpenseBreakdown
+        expenses={expensesForThisMonth}
+        setExpenses={setExpenses}
+      />
 
       <AddExpenseModal
         open={showAddModal}
