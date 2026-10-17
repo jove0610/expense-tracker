@@ -3,12 +3,14 @@ import type { ExpenseInterface, ScheduledExpenseInterface } from "./interface";
 export const MOCK_CATEGORY = [
   { id: "1", name: "Bills" },
   { id: "2", name: "Tithes" },
-  { id: "3", name: "Transpo - Office" },
-  { id: "4", name: "Foods" },
-  { id: "5", name: "Foods - Grab" },
-  { id: "6", name: "Foods - Coke" },
-  { id: "7", name: "Foods - Cheat" },
+  { id: "3", name: "Transpo" },
+  { id: "4", name: "Grocery" },
+  { id: "5", name: "Grab Food" },
+  { id: "6", name: "Softdrinks" },
+  { id: "7", name: "Cheat Foods" },
   { id: "8", name: "Utilities" },
+  { id: "9", name: "Laundry" },
+  { id: "10", name: "Subscriptions" },
   { id: "99", name: "Others" },
 ];
 
